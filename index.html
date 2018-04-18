@@ -1,376 +1,657 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Anna Lu's iWatch</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="css/site.css" rel="stylesheet" media="screen">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-    <script src='javascript/slidetounlock.js'></script>
-    <script type="text/javascript">
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<title>AnnaLu's Portfolio </title>
+	<meta name="description" content="Anna's Portfolio" />
+	<meta name="author" content="Anna (Xinrui) Lu" />
+	<link rel="icon" href="http://demo.lion-coders.com/hello/hello-dark/images/favicon.ico"/>
 
-        $(document).ready(function() {
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'/>
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="css/animate.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
 
-              setInterval( function() {
-              var seconds = new Date().getSeconds();
-              var sdegree = seconds * 6;
-              var srotate = "rotate(" + sdegree + "deg)";
+</head>
+<body>
 
-              $("#sec").css({"-moz-transform" : srotate, "-webkit-transform" : srotate});
+	<div class="preloader">
+			<div class="spinner"><strong>Loading...<i class="fa-li fa fa-spinner fa-spin"></i></strong></div>
+	</div>
+	<div class="preloader-left"></div>
+	<div class="preloader-right"></div>
 
-              }, 1000 );
+	<div class="inline-menu-container hidex">
+	
+		<ul class="inline-menu">
+			<li class="about menu-item">Resume</li>			
+			<li class="portfolio menu-item">Portfolio</li>		
+			<li class="blog menu-item">Blog</li>
+			<li class="contact menu-item">Contact</li>
+			<li id="close">&times;</li>
+		</ul>
+
+	</div>
+
+<section class="home">
+	<div id="myWechat" class="modal" 
+		 style="display: none;margin-left:7%;z-index: 1;padding-top: 30px;left: 380px;top:460px;width:230px; height:260px; overflow: auto; background-color: rgba(255,255,255,0.4);">
+    				<span style='' class="close cursor" onclick="closeWechatModal()">&times;</span>
+   				 	<div class="modal-content" style="position: relative; background-color: rgba(255,255,255,0.2);margin: auto; padding: 0;width:auto;max-width: 1200px;">
+       					<img src="images/wechat.jpg" >
+    				</div>
+				</div>
+
+    <div class="container">
+		<div class="name-block"> 
+			<div class="name-block-container">	
+				<h1><span>Hi, I'm</span>Anna (Xinrui) Lu</h1>
+                                  <h2> Developer</h2>				
+				<a class="btn btn-download" href="files/Anna_Xinrui LU_developer.pdf" download>Download Resume</a>
+                   <ul class="social">
+					<li><a href="https://twitter.com/xrlu0929?lang=en"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/annaxlu"><i class="fa fa-linkedin"></i></a></li>
+					<li ><a id="wechat" onclick="openWechatModal();"><i class="fa fa-wechat"></i></a></li>
+				   </ul>
+
+				
+
+			</div>	
+		</div> 
+
+		<div class="menu-blocks">    			
+			<div class="about-block"> 
+				<div class="about-block-container">			
+					<h2 class="about menu-item">Resume</h2>
+				</div>		
+			</div>
+			<div class="portfolio-block">
+				<div class="portfolio-block-container">			
+					<h2 class="portfolio menu-item">Portfolio</h2>
+				</div>
+			</div>
+			<div class="blog-block"> 
+				<div class="blog-block-container">			
+					<h2 class="blog menu-item">Blog</h2>
+				</div>		
+			</div>
+			<div class="contact-block"> 
+				<div class="contact-block-container">			
+					<h2 class="contact menu-item">Contact</h2>
+				</div>		
+			</div>
+		</div>
+		
+		
+		<div class="content-blocks about hidex"> 
+									
+			<section class="content" id="about"> 
+				
+				<div class="block-content">
+					<h3 class="block-title">Profile</h3>
+					<div class="row">
+						<div class="col-md-7">
+							<p>Growing up in a small coastal town, I have always wanted to explore further beyond the blue horizon. </p>
+							<p>While pursuing my degree in Multi-lingual Studies in Columbia University, I decided I wanted to do something more than only study the natural human languages -- perhaps some languages that are more creative, more descriptive, and more logical. Then I had an encounter with Java, and started coding. With a study group at Columbia University, I made my first App: a very simple Android calculator, and decided to continue with coding.</p>
+							<p>If you feel inspired by my story, if you wish to see more of my projects, if you believe that I can contribute to the success of your business, or if you have suggestions for me, I'll be so grateful and happy; therefore, and please don't hesitate to contact me. </p>
+							<p>Cheers, </p>
+							<img class="sign" src="images/signature.png" alt="AnnaXinruiLu's Signature" />
+						</div>
+						<div class="col-md-5">
+							<ul class="info-list">
+								<li><strong>Name : </strong>  Anna (Xinrui) Lu</li>
+								<li><strong>Address : </strong>   10740 Queens BLVD, Forest Hills, NY11375</li>
+								<li><strong>Email : </strong> xrlu0929@gmail.com</li>
+								<li><strong>Phone : </strong> + 1 646 589 5316</li>
+								<li><strong>Skype : </strong>  blessedanna7</li>
+								<li><strong>Interest : </strong> full-time (after May 2018)</li>
+
+							</ul>
+						</div>					
+					</div>
+				</div> 
+				
+				<div class="block-content ">
+					<h3 class="block-title">Skills</h3>
+					<div class="row">
+						<div class="col-sm-6">
+							<h4>Technical Skills</h4>
+							<label class="progress-bar-label">Wechat MiniApp - <span>0.5 years experience</span></label>
+							<div class="progress">
+								<div style="width: 85%;" class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+									<span>85%</span>
+								</div> 
+							</div>
+							<label class="progress-bar-label">Javascript - <span>0.5 years experience</span></label>
+							<div class="progress">
+								<div style="width: 70%;" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+									<span>70%</span>
+								</div> 
+							</div>
+							<label class="progress-bar-label">HTML&amp;CSS - <span>1 year experience</span></label>
+							<div class="progress">
+								<div style="width: 80%;" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+									<span>80%</span>
+								</div> 
+							</div>
+							<label class="progress-bar-label">Java - <span>2 years experience</span></label>
+							<div class="progress">
+								<div style="width: 67%;" class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100">
+									<span>67%</span>
+								</div> 
+							</div>
+
+							<label class="progress-bar-label">C++ - <span>1 year experience</span></label>
+							<div class="progress">
+								<div style="width: 60%;" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+									<span>60%</span>
+								</div> 
+							</div>
+
+							<label class="progress-bar-label">Python - <span>2 years experience</span></label>
+							<div class="progress">
+								<div style="width: 80%;" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+									<span>80%</span>
+								</div> 
+							</div>
+
+							<label class="progress-bar-label">objective-c - <span>8 months experience</span></label>
+							<div class="progress">
+								<div style="width: 40%;" class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+									<span>40%</span>
+								</div> 
+							</div>
+						</div> 
+						<div class="col-sm-6">
+							<h4>Know-how</h4>
+							<div class="row">
+								<div class="col-sm-6">
+									<ul class="icon-list">
+										<li>Web Development</li>
+										<li>Mobile Development</li>
+										<li>Database</li>
+										<li>Deployment in Cloud</li>
+									</ul>
+								</div> 
+								<div class="col-sm-6">
+									<ul class="icon-list">
+
+										<li>Web Usability</li>
+										<li>Information Architect</li>
+										<li>CRM</li>
+										<li>User Interview</li>
+										
+									</ul>
+								</div> 
+							</div> 
+						</div> 
+					</div> 
+				</div>
+
+				<div class="block-content">
+					<h3 class="block-title">Projects</h3>
+					<div class="row">
+						<div class="col-sm-4 service">
+							<div class="service-icon">
+								<i class=" fa fa-pencil"></i>
+							</div>
+							<h4>Wechat MiniApp - Oral English Improvement</h4>
+							<small>search in Wechat Store with name "英语口语发音"</small>
+							<p>This app helps English teachers distribute learning materials (text, audio, image), collect learners’ homework, provide individualized feedback, and other pedagogical communications based on WeChat </p>
+							
+
+						</div>
+
+						<div class="col-sm-4 service">
+							<div class="service-icon">
+								<i class=" fa fa-building"></i>
+							</div>
+							<h4>Web - Laptop Loan Web Application </h4>
+							<small>Baruch College CIS Department</small>
+							<p>Optimized assistants and administrator’s ad-hoc workflow with unified data structure and user-friendly interface implemented by Django and jquery plugins </p>
+						</div>
+						<div class="col-sm-4 service">
+							<div class="service-icon">
+								<i class=" fa fa-image"></i>
+							</div>
+							<h4>Web - Nearby Event Recommendation Website</h4>
+							<p>Recommend nearby events based on events chosen by the user as interested</p>
+							<p>Catch user’s location using their IP address and GeoHash to query nearby events with TicketMaster API</p>
+						</div>
+										
+					</div>
+				</div> 
+						
+				<div class="block-content ">
+					<h3 class="block-title">Experience</h3>
+					<div class="timeline experience">
+
+						<div class="row ">											
+							<div class="col-md-12">
+								<div class="exp-holder">
+									<div class="exp">
+										<div class="hgroup">
+											<h4>Developer – Wailian Technology </h4>
+											<h5>Mar 2018 - <span class="current">Current</span></h5>
+										</div>
+										<p>Develop a <strong> WechaApp </strong> for language training</p>
+										</div>
+
+									<div class="exp">
+										<div class="hgroup">
+											<h4>BA and Developer Intern – NYC Department of SBS </h4>
+											<h5>Sept 2017 - <span class="current">Current</span></h5>
+										</div>
+										<p><strong>Salesforce </strong> instance business application development, refining and maintenance at Department of Small Business Services</p>
+										<p>Make recommendation to the ongoing <strong>CRM</strong> data migration project</p>
+										<p>Implementing <strong> data visualization</strong> for internal users.</p>
+									</div>
+
+									<div class="exp">
+										<div class="hgroup">
+											<h4>IT Intern – China General Chamber of Commerce-USA </h4>
+											<h5>Feb 2017 - May 2017</h5>
+										</div>
+										<p>Worked in an <strong>Agile</strong> team to create database of Chinese Investment Enterprises.</p>
+										<p> Experienced and contributed to a <strong>Full life-cycle </strong> of the project, including requirements, design, prototyping, implementation, testing, debugging and deployment.</p>
+									</div>												
+															
+								</div>
+							</div>											
+						</div>
+
+					</div>
+				</div>
+				
+				<div class="block-content">
+					<h3 class="block-title">Education</h3>
+					<div class="timeline education">
+						<div class="row ">
+							<div class="col-md-12">
+								<div class="exp-holder">
+									<div class="exp">
+										<div class="hgroup">
+											<h4>Master of Science – Baruch College at CUNY </h4>
+											<h5>Aug 2016 - May 2018</h5>
+										</div>
+										<p>Computer Information Systems</p>
+										<p>Courses: C++, Python, System Analysis and Design, Database</p>
+									</div>
+									<div class="exp">
+										<div class="hgroup">
+											<h4>Master of Arts – Teachers College at Columbia University </h4>
+											<h5>Sept 2014 - May 2016</h5>
+										</div>
+										<p>Bilingual/Multilingual Studies</p>
+										<p>Course(s): Java, Data Structure and Algorithm</p>
+										<p>Treasury at Future China Initiative</p>
+									</div>
+									<div class="exp">
+										<div class="hgroup">
+											<h4>Bachelor of Arts – Sun Yat-sen University </h4>
+											<h5>Sept 2010 - June 2014</h5>
+										</div>
+										<p>Chinese Language and Literature</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					 </div>
+				
+				
+					<div class="row text-center">
+						<div class="col-md-12 btn-email">
+							<a class="btn lowercase">xrlu0929@gmail.com</a><br/>
+							
+						</div>	
+					</div>
+				</div> 
+				
+			
+			</section>
+		</div>		
+		
+		<div class="content-blocks portfolio hidex"> 
+										
+			<section class="content">
+				
+				<div tabindex="-1" role="dialog" class="modal fade" id="myModal"> 
+					<img src="images/portfolio/OWLapp.jpg" style="width: 400px; height: 750px;margin-top: 100px; margin-left: 100px; padding-bottom: 100px;">
+				</div> <!--Used for mini app part-->
+
+				<div class="block-content">
+					<h3 class="block-title">Portfolio</h3>
+					<div class="row">
+						<div class="col-md-12">
+							<ul id="filters">
+							  <li class="active" data-filter="*">All</li>
+							  
+							  <li data-filter=".web">Web</li>
+							  
+							  <li data-filter=".mobile">Mobile</li>
+
+							  <li data-filter=".crm">CRM</li>
+
+							</ul>
+							<div id="projects">
+								  <div class="project crm" >
+									<a target="_blank" href="https://annaxrlu.wordpress.com/2018/02/11/minipro-google-sheet-email-manager/">
+										<!--There used to be a class="open-project" for modal display, but I got tired of it-->
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Email Manager</h4>                
+													<p>CRM related</p>                
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/emailManager.jpg" alt="Google emaiManager">
+								  </div>
 
 
-              setInterval( function() {
-              var hours = new Date().getHours();
-              var mins = new Date().getMinutes();
-              var hdegree = hours * 30 + (mins / 2);
-              var hrotate = "rotate(" + hdegree + "deg)";
+								  <div class="project mobile" id='OWLMiniApp' >
+									<div data-toggle="modal" data-target="#myModal">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>English Training</h4>                        
+													<p>Mobile</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<img src="images/portfolio/OWL.jpg" alt="OWLMiniApp">
+								  </div>
 
-              $("#hour").css({"-moz-transform" : hrotate, "-webkit-transform" : hrotate});
+								  <div class="project web">
+									<a href="https://annaxrlu.wordpress.com/2017/09/16/eventmaster-recommendation-based-on-your-location-and-preference/" target="_blank">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Event Recommend</h4>                
+													<p>web</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/event.jpg" alt="event">
+								  </div>
 
-              }, 1000 );
+								  <div class="project mobile">
+									<a href="" target="_blank" href="https://annaxrlu.wordpress.com/2017/05/23/java_android-simple-calculator/">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Android Calculator</h4>                
+													<p>Mobile / Java</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/calculator.jpg" alt="calculator">
+								  </div>
 
+								  <div class="project web">
+									<a target="_blank" href="https://annaxrlu.wordpress.com/2017/03/14/java_coursera-unfoldingmap/">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Earthquake Map</h4>                
+													<p>Web / Java</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/earthQ.jpg" alt="Earthquake">
+								  </div>
 
-              setInterval( function() {
-              var mins = new Date().getMinutes();
-              var mdegree = mins * 6;
-              var mrotate = "rotate(" + mdegree + "deg)";
+								  <div class="project web">
+									<a target="_blank" href="https://annaxrlu.wordpress.com/2017/05/23/python_assets-and-equities-correlation-with-sp-500/">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>Python Data Analysis</h4>                
+													<p>Web / Python</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/python.png" alt="python">
+								  </div>
 
-              $("#min").css({"-moz-transform" : mrotate, "-webkit-transform" : mrotate});
+								  <div class="project web">
+									<a target="_blank" href="https://annaxrlu.wordpress.com/2017/07/17/htmlcssjavascript-front-end-demo/">
+										<div class="project-overlay">
+											<div class="vcenter">
+												<div class="centrize">
+													<h4>webpage design</h4>                
+													<p>Web</p>
+												</div>
+											</div>
+										</div>
+									</a>
+									<img src="images/portfolio/genonova.jpg" alt="genonova">
+								  </div>
+							</div>
+						</div>	
+					</div>
+					
+					<div class="row text-center">
+						<div class="col-md-12">
+							<h4>Interested in working together?</h4>						
+							<a class="btn lowercase">xrlu0929@gmail.com</a><br/>
+						</div>	
+					</div>
+				</div>
+			
+			</section>
+		</div>
 
-              }, 1000 );
+		
+		
+		<div class="content-blocks blog hidex"> 
+										
+			<section class="content"> 
+				<div class="block-content">  	  
+					<h3 class="block-title">My Blog</h3>
+					<h5> Coming soon! </h5>
+					<h5> <a target="_blank" href="https://annaxrlu.wordpress.com/"> Please feel free to visit my old blogs</a></h5>
+					<!--<div class="col-md-10 col-md-offset-1">
+							<div class="post">
+								<div class="post-thumbnail">
+									<a class="open-post" href="http://demo.lion-coders.com/hello/hello-dark/post-single.html">
+										<img src="images/blog/4.jpg" alt="">
+									</a>
+								</div>			
+								<div class="post-title">
+									<a class="open-post" href="http://demo.lion-coders.com/hello/hello-dark/post-single.html"><h2>Typography for web</h2></a>
+									<p class="post-info">
+										<span class="post-author">Posted by John Sparrow</span>
+										<span class="slash"></span>
+										<span class="post-date">Dec 08, 2015</span>
+										<span class="slash"></span>
+										<span class="post-catetory">Food</span>
+									</p>
+								</div>
+								<div class="post-body">
+									<p>Omnium nominati prodesset pri no. Per dolor gloriatur<span class="selected"> persequer</span>is ad, te his aliquip molestie. Veri tantas ad usu, mel ne sonet quaeque assueverit. Enim eruditi euripidis his et, dictas admodum posidonium ei pro. An duo tempor maluisset honestatis. Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. Est sint magna mucius te, iudico integre gubergren no vis. Assum doming et pro, est ei inermis corpora argumentum. Eos graece sadipscing et, pri dico salutandi consetetur et, explicari voluptatum mei at. Ex cum nisl epicurei, sea in molestie theophrastus, nibh tollit apeirian no vis. </p>            
+									<a class="btn open-post" href="http://demo.lion-coders.com/hello/hello-dark/post-single.html">Read More</a>
+								</div>
+							</div>
+							<div class="post">
+								<div class="post-thumbnail">
+									<a class="open-post" href="http://demo.lion-coders.com/hello/hello-dark/post-single.html">
+										<img src="images/blog/3.jpg" alt="">
+									</a>
+								</div>			
+								<div class="post-title">
+									<a class="open-post" href="http://demo.lion-coders.com/hello/hello-dark/post-single.html"><h2>Typography for web</h2></a>
+									<p class="post-info">
+										<span class="post-author">Posted by John Sparrow</span>
+										<span class="slash"></span>
+										<span class="post-date">Dec 08, 2015</span>
+										<span class="slash"></span>
+										<span class="post-catetory">Food</span>
+									</p>
+								</div>
+								<div class="post-body">
+									<p>Omnium nominati prodesset pri no. Per dolor gloriatur<span class="selected"> persequer</span>is ad, te his aliquip molestie. Veri tantas ad usu, mel ne sonet quaeque assueverit. Enim eruditi euripidis his et, dictas admodum posidonium ei pro. An duo tempor maluisset honestatis. Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. Est sint magna mucius te, iudico integre gubergren no vis. Assum doming et pro, est ei inermis corpora argumentum. Eos graece sadipscing et, pri dico salutandi consetetur et, explicari voluptatum mei at. Ex cum nisl epicurei, sea in molestie theophrastus, nibh tollit apeirian no vis. </p>            
+									<a class="btn open-post" href="http://demo.lion-coders.com/hello/hello-dark/post-single.html">Read More</a>
+								</div>
+							</div>
+							<div class="post">
+								<div class="post-thumbnail">
+									<a class="open-post" href="http://demo.lion-coders.com/hello/hello-dark/post-single.html">
+										<img src="images/blog/2.jpg" alt="">
+									</a>
+								</div>			
+								<div class="post-title">
+									<a class="open-post" href="http://demo.lion-coders.com/hello/hello-dark/post-single.html"><h2>Typography for web</h2></a>
+									<p class="post-info">
+										<span class="post-author">Posted by John Sparrow</span>
+										<span class="slash"></span>
+										<span class="post-date">Dec 08, 2015</span>
+										<span class="slash"></span>
+										<span class="post-catetory">Food</span>
+									</p>
+								</div>
+								<div class="post-body">
+									<p>Omnium nominati prodesset pri no. Per dolor gloriatur<span class="selected"> persequer</span>is ad, te his aliquip molestie. Veri tantas ad usu, mel ne sonet quaeque assueverit. Enim eruditi euripidis his et, dictas admodum posidonium ei pro. An duo tempor maluisset honestatis. Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. Est sint magna mucius te, iudico integre gubergren no vis. Assum doming et pro, est ei inermis corpora argumentum. Eos graece sadipscing et, pri dico salutandi consetetur et, explicari voluptatum mei at. Ex cum nisl epicurei, sea in molestie theophrastus, nibh tollit apeirian no vis. </p>            
+									<a class="btn open-post" href="http://demo.lion-coders.com/hello/hello-dark/post-single.html">Read More</a>
+								</div>
+							</div>
+							<div class="post">
+								<div class="post-thumbnail">
+									<a class="open-post" href="http://demo.lion-coders.com/hello/hello-dark/post-single.html">
+										<img src="images/blog/1.jpg" alt="">
+									</a>
+								</div>			
+								<div class="post-title">
+									<a class="open-post" href="http://demo.lion-coders.com/hello/hello-dark/post-single.html"><h2>Typography for web</h2></a>
+									<p class="post-info">
+										<span class="post-author">Posted by John Sparrow</span>
+										<span class="slash"></span>
+										<span class="post-date">Dec 08, 2015</span>
+										<span class="slash"></span>
+										<span class="post-catetory">Food</span>
+									</p>
+								</div>
+								<div class="post-body">
+									<p>Omnium nominati prodesset pri no. Per dolor gloriatur<span class="selected"> persequer</span>is ad, te his aliquip molestie. Veri tantas ad usu, mel ne sonet quaeque assueverit. Enim eruditi euripidis his et, dictas admodum posidonium ei pro. An duo tempor maluisset honestatis. Ne cum invidunt constituto, sanctus accusam an usu, ea mandamus incorrupte mel. Pro cu purto graeco. Wisi sonet elitr eos in. Est sint magna mucius te, iudico integre gubergren no vis. Assum doming et pro, est ei inermis corpora argumentum. Eos graece sadipscing et, pri dico salutandi consetetur et, explicari voluptatum mei at. Ex cum nisl epicurei, sea in molestie theophrastus, nibh tollit apeirian no vis. </p>            
+									<a class="btn open-post" href="http://demo.lion-coders.com/hello/hello-dark/post-single.html">Read More</a>
+								</div>
+							</div>
+						  
+						<div class="text-center">
+							<ul class="pagination">
+								<li>
+								  <a href="index.html#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								  </a>
+								</li>
+								<li class="active"><a href="index.html#">1</a></li>
+								<li><a href="index.html#">2</a></li>
+								<li><a href="index.html#">3</a></li>
+								<li><a href="index.html#">4</a></li>
+								<li><a href="index.html#">5</a></li>
+								<li>
+								  <a href="index.html#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								  </a>
+								</li>
+							</ul>
+						</div>
+					</div> -->
+				</div>	
+			</section>
+		</div> <!--blog-->
 
+		<div class="content-blocks contact hidex"> 
+										
+			<section class="content"> 
+				<div class="block-content">
+					<h3 class="block-title">Get in touch</h3>
+					<div class="row">
+				  
+						<div class="col-md-6">
+							<div class="contact-content ">
+								<div class="contact-icon">
+									<i class="fa fa-map-marker"></i>
+								</div>
+								<div class="contact-details">
+									<h5>Address</h5>
+									<p>10740 Queens BLVD, Forest Hills, NY 11375</p>
+								</div>
+							</div>	
+							<div class="contact-content ">
+								<div class="contact-icon">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="contact-details">
+									<h5>Call Me</h5>
+									<p> +1 (646) 589-5316</p>
+								</div>
+							</div>	
+							<div class="contact-content ">
+								<div class="contact-icon">
+									<i class="fa fa-envelope"></i>
+								</div>
+								<div class="contact-details">
+									<h5>Email</h5>
+									<p>xrlu0929@gmail.com</p>
+									<p>xrlu0929@163.com</p>
+								</div>
+							</div>
+							
+						</div>
+						<!--<div class="col-md-6">
+								<form method="POST" action="mailto:xrlu0929@gmail" enctype="text/plain" id="formcontactus" class="" >
+								  <div class="form-group">		  
+									<input name="name" type="text" class="form-control requiretop" placeholder="* Your Name" />								 							 
+								  </div>
+								  <div class="form-group">				  
+									<input name="email" type="email" class="form-control requiretop" placeholder="* Your Email" />			 
+								  </div>
+								  <div class="form-group">				  
+									<textarea rows="6" name="message" class="form-control requiretop" placeholder="* Your Message"></textarea>			 
+								  </div>
+								  <div class="form-group">
+									<button type="submit" value="send" class="btn btn-dark selected">Send Message</button>
+								  </div>    
+								</form>
+						</div>-->
+					</div>  
+					
+				</div>	 				
+			</section>
+		</div>		
 
-
-        });
-
-    </script>
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <!--ready for mobile responsive-->
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar" style="padding: 15px 15px; margin:8px 8px; border-color:lightgray;">
-                 <i class="fa fa-bars" aria-hidden="true"></i>
-             </button>
-
-          <a class="navbar-brand" href="index.html#">Anna Xinrui Lu</a>
-        </div>
-        <div class="collapse navbar-collapse" id="top-navbar">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active navbar-manue"><a href="index.html#"> Home </a></li>
-            <li class="navbar-manue"><a href=""> Projects </a></li>
-            <li class="navbar-manue"><a href=""> About me </a></li>
-            <li class="navbar-manue"><a href=""> Contact </a></li>
-            <li class="navbar-manue-last"><a href="cv.html#"> Resume </a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div class="container topspacer" style="margin-bottom: -56px;">
-      <div class="row">
-        <div class="clock-center">
-          <ul id="clock">
-            <li id="watchpoint"></li>
-            <li id="sec"></li>
-            <li id="hour"></li>
-            <li id="min"></li>
-          </ul>
-
-          <div id="well">
-            <div class="unlock-content"><strong id="slider"></strong> <span>Slide to unlock</span></div>
-          </div>
-
-          <div class="clock-menu-lists">
-
-            <div class="ch-grid-top-first">
-              <ul class="ch-grid">
-
-                <li class="li-img-sm">
-                  <a href="index.html" target="_blank">
-                    <div class="ch-item ch-img-home">
-                      <div class="ch-info-wrap">
-                        <div class="ch-info">
-                          <div class="ch-info-front ch-img-home"></div>
-                          <div class="ch-info-back">
-                            <div class="content">Home</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  </li>
-                  <li class="li-img-sm">
-                    <a href="https://www.google.com/maps/place/Columbia+University/@40.8076068,-73.9646092,17.07z/data=!4m5!3m4!1s0x89c2f63e96d30dc9:0x577933f947e52750!8m2!3d40.8075355!4d-73.9625727" target="_blank">
-                      <div class="ch-item ch-img-googlemap">
-                        <div class="ch-info-wrap">
-                          <div class="ch-info">
-                            <div class="ch-info-front ch-img-googlemap"></div>
-                            <div class="ch-info-back">
-                              <div class="content">Google Map</div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-        <div class="ch-grid-top">
-                <ul class="ch-grid">
-
-        <li class="li-img-md">
-                  <a href="https://www.github.com/xrlu0929/" target="_blank">
-            <div class="ch-item ch-img-github">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-github"></div>
-                  <div class="ch-info-back">
-                    <div class="content">GitHub</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          </li>
-
-        <li class="li-img-md">
-        <a href="https://www.linkedin.com/in/annaxlu" target="_blank">
-            <div class="ch-item ch-img-linkedin">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-linkedin"></div>
-                  <div class="ch-info-back">
-                    <div class="content">Linkedin</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          </li>
-
-
-        <li class="li-img-md">
-          <a href="https://www.twitter.com/xrlu0929" target="_blank">
-            <div class="ch-item ch-img-twitter">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-twitter"></div>
-                  <div class="ch-info-back">
-                    <div class="content">Twitter</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          </li>
-                </ul>
-              </div>
-
-
-            <div class="ch-grid-middle">
-        <ul class="ch-grid">
-        <li class="li-img-md">
-          <a href="https://www.facebook.com/" target="_blank">
-            <div class="ch-item ch-img-facebook">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-facebook"></div>
-                  <div class="ch-info-back">
-                    <div class="content">Facebook</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </li>
-
-        <li class="li-img-lg">
-          <a href="mailto:xrlu0929@gmail.com" target="_blank">
-            <div class="ch-item ch-img-email">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-email"></div>
-                  <div class="ch-info-back">
-                    <div class="content">Email</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </a>
-          </li>
-
-        <li class="li-img-lg">
-          <a href="tel:+1 646 589 5316" target="_blank">
-            <div class="ch-item ch-img-phone">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-phone"></div>
-                  <div class="ch-info-back">
-                    <div class="content">Phone</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          </li>
-        <li class="li-img-md">
-          <a href="skype:blessedanna7?userinfo" target="_blank">
-            <div class="ch-item ch-img-skype">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-skype"></div>
-                  <div class="ch-info-back">
-                    <div class="content">Skype</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-          </li>
-        </ul>
-        </div>
-
-
-            <div class="ch-grid-bottom">
-                <ul class="ch-grid">
-
-        <li class="li-img-md">
-                  <a href="./cv.html" target="_blank">
-            <div class="ch-item ch-img-resume">
-              <!--<div>Icons made by <a href="https://www.flaticon.com/authors/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-resume"></div>
-                  <div class="ch-info-back">
-                    <div class="content">Resume</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </li>
-
-        <li class="li-img-lg">
-                  <a href="./project.html" target="_blank">
-            <div class="ch-item ch-img-projects">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-projects"></div>
-                  <div class="ch-info-back">
-                    <div class="content">Projects</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </li>
-
-        <li class="li-img-sm">
-                 <a href="./aboutMe.html" target="_blank">
-            <div class="ch-item ch-img-aboutme">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-aboutme"></div>
-                  <div class="ch-info-back">
-                    <div class="content">About</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </li>
-                </ul>
-              </div>
-
-            <div class="ch-grid-bottom-last">
-                <ul class="ch-grid">
-
-        <li class="li-img-sm">
-                  <a href="./contact.html" target="_blank">
-            <div class="ch-item ch-img-contactme">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-contactme"></div>
-                  <div class="ch-info-back">
-                    <div class="content">Contact</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </li>
-
-        <li class="li-img-sm" id="wechat-icon">
-          <!--<a href="weixin://contacts/profile/annalv0929" target="_blank">-->
-            <div class="ch-item ch-img-pinterest">
-              <div class="ch-info-wrap">
-                <div class="ch-info">
-                  <div class="ch-info-front ch-img-pinterest"></div>
-                  <div class="ch-info-back">
-                    <div class="content">WeChat</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </li>
-      </ul>
-   </div>
-  </div>
-</div>
+	</div>			
+</section>
 
 
-      </div>
-    </div>
 
-    <div id="wechat-info"><p>WeChat ID: <br>annalv0929</p></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+	function openWechatModal() {
+    document.getElementById('myWechat').style.display = "block";
+	}
 
-    <footer >
-        <div class="center">
-          <hr>
-          <p class="text-center">2017 Anna Xinrui Lu</p>
-      </div>
-    </footer>
+ 	function closeWechatModal() {
+    document.getElementById('myWechat').style.display = "none";
+	}
+</script>
 
-
-    <script src="javascript/bootstrap.min.js"></script>
-
-   
-    
-      <!-- Global site tag (gtag.js) - Google Analytics //这里需要自己注册， 然后加入GoogleAnalytics给你的代码 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110322552-1"></script>
-	<script>
-  	window.dataLayer = window.dataLayer || [];
-  	function gtag(){dataLayer.push(arguments);}
-  	gtag('js', new Date());
-
-  	gtag('config', 'UA-110322552-1');
-	</script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $("#wechat-icon").click(function(){
-      $("#wechat-info").fadeToggle();
-      });
-    });
-  </script>
-
-      <!--(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-', 'auto');
-      ga('send', 'pageview');-->
-
-    </script>
-  </body>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="js/contact_me.js"></script>
+<script type="text/javascript" src="js/smooth-scroll.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+ </body>
 </html>
