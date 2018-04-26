@@ -39,7 +39,7 @@
 
 <section class="home">
 	<div id="myWechat" class="modal" 
-		 style="display: none;margin-left:7%;z-index: 1;padding-top: 30px;left: 380px;top:460px;width:230px; height:260px; overflow: auto; background-color: rgba(255,255,255,0.4);">
+		 style="display: none;margin-left:7%;z-index: 1;padding-top: 30px;left: 380px;top: 67%;width:225px; height:260px; overflow: auto; background-color: rgba(52, 52, 52,0.6);">
     				<span style='' class="close cursor" onclick="closeWechatModal()">&times;</span>
    				 	<div class="modal-content" style="position: relative; background-color: rgba(255,255,255,0.2);margin: auto; padding: 0;width:auto;max-width: 1200px;">
        					<img src="images/wechat.jpg" >
@@ -97,7 +97,7 @@
 						<div class="col-md-7">
 							<p>Growing up in a small coastal town, I have always wanted to explore further beyond the blue horizon. </p>
 							<p>While pursuing my degree in Multi-lingual Studies in Columbia University, I decided I wanted to do something more than only study the natural human languages -- perhaps some languages that are more creative, more descriptive, and more logical. Then I had an encounter with Java, and started coding. With a study group at Columbia University, I made my first App: a very simple Android calculator, and decided to continue with coding.</p>
-							<p>If you feel inspired by my story, if you wish to see more of my projects, if you believe that I can contribute to the success of your business, or if you have suggestions for me, I'll be so grateful and happy; therefore, and please don't hesitate to contact me. </p>
+							<p>If you feel inspired by my story, if you wish to see more of my projects, if you believe that I can contribute to the success of your business, or if you have suggestions for me, I'll be so grateful and happy; therefore, please don't hesitate to contact me. </p>
 							<p>Cheers, </p>
 							<img class="sign" src="images/signature.png" alt="AnnaXinruiLu's Signature" />
 						</div>
@@ -320,7 +320,12 @@
 			<section class="content">
 				
 				<div tabindex="-1" role="dialog" class="modal fade" id="myModal"> 
-					<img src="images/portfolio/OWLapp.jpg" style="width: 400px; height: 750px;margin-top: 100px; margin-left: 100px; padding-bottom: 100px;">
+					<picture id="myModal-img-container" >
+						<source media="(max-width: 766px)" srcset="images/portfolio/OWLapp2.jpg" >
+						<source media="(min-width: 800px)" srcset="images/portfolio/OWLapp.jpg" >
+						<img src="images/portfolio/OWLapp.jpg" id="myModal-img" >
+					</picture> 
+						 
 				</div> <!--Used for mini app part-->
 
 				<div class="block-content">
@@ -383,7 +388,7 @@
 								  </div>
 
 								  <div class="project mobile">
-									<a href="" target="_blank" href="https://annaxrlu.wordpress.com/2017/05/23/java_android-simple-calculator/">
+									<a target="_blank" href="https://annaxrlu.wordpress.com/2017/05/23/java_android-simple-calculator/">
 										<div class="project-overlay">
 											<div class="vcenter">
 												<div class="centrize">

@@ -1542,6 +1542,13 @@ ul.info-list li strong {
         left: 1067px;
         top: 48px;
     }
+
+    #myModal-img {
+        width: 300px; 
+        height: 550px;
+        margin-top: 100px; 
+        margin-left: 100px;
+    }
 }
 
 @media (min-width:1025px) and (max-width:1280px) {
@@ -1593,6 +1600,13 @@ ul.info-list li strong {
 		width:350px;
 		height: 300px;
     }
+
+    #myModal-img {
+        width: 300px; 
+        height: 550px;
+        margin-top: 100px; 
+        margin-left: 100px;
+    }
 }
 
 @media (min-width:981px) and (max-width:1024px) {
@@ -1635,6 +1649,13 @@ ul.info-list li strong {
         transform: rotate(-34deg);
         left: 365px;
         top: 538px;
+    }
+
+    #myModal-img {
+        width: 300px; 
+        height: 550px;
+        margin-top: 100px; 
+        margin-left: 100px;
     }
 }
 
@@ -1682,6 +1703,13 @@ ul.info-list li strong {
 	
 	.project {
 		width: 50%;
+    }
+
+    #myModal-img {
+        width: 300px; 
+        height: 550px;
+        margin-top: 100px; 
+        margin-left: 100px;
     }
 }
 
@@ -1755,6 +1783,13 @@ ul.info-list li strong {
 		width: 100%;
 		left: 0;
 	}	
+
+    #myModal-img {
+        width: 130px; 
+        height: 150px;
+        margin-top: 50px; 
+        margin-left: 10px;
+    }
 }
 
 @media (max-width:768px) {
@@ -1827,6 +1862,12 @@ ul.info-list li strong {
 		width: 100%;
 		left: 0;
 	}
+    #myModal-img {
+        width: 130px; 
+        height: 150px;
+        margin-top: 50px; 
+        margin-left: 10px;
+    }
 }
 
 @media (max-width:568px) {
@@ -1869,5 +1910,13 @@ ul.info-list li strong {
 	.project {
 		width: 100%;
     }
+
+    #myModal-img {
+        width: 130px; 
+        height: 150px;
+        margin-top: 50px; 
+        margin-left: 10px;
+    }
+
 }
 
